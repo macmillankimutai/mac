@@ -9,9 +9,9 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1,'Watch Finding Nemo','Myllan',new Date(2018,3,2)
+    new Quote(1,'Its truimph over fear','Myllan',new Date(2018,3,2)
   ),
-    new Quote(2,'Buy Cookies','McMyllan',new Date(2018,3,1) )
+    new Quote(2,'Education is the key','McMyllan',new Date(2018,3,1) )
   ]
   deleteQuote(isComplete,index){
     if(isComplete){
@@ -22,7 +22,7 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
-  
+
   addNewQuote(quote){
     let quoteLength = this.quotess.length;
     quote.id=quoteLength+1;
